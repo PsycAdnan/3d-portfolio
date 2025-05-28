@@ -1,4 +1,8 @@
 const navLinks = [
+   {
+    name: "About Me",
+    link: "#about",
+  },
   {
     name: "Work",
     link: "#work",
@@ -12,8 +16,8 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Resume",
+    link: "https://pdflink.to/d7cd93e7/",
   },
 ];
 
@@ -29,10 +33,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 4, suffix: "+", label: "Years of Experience" },
+  { value: 30, suffix: "+", label: "Certifications Earned" },
+  { value: 20, suffix: "+", label: "Completed Projects" },
+  { value: 5, suffix: "+", label: "Hackathons Participated" },
 ];
 
 const logoIconsList = [
@@ -75,17 +79,17 @@ const abilities = [
   {
     imgPath: "/images/seo.png",
     title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    desc: "Fully committed to every task with strong attention to detail and quality.",
   },
   {
     imgPath: "/images/chat.png",
     title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    desc: "Fluent in English, Kannada, Hindi, and Tamil, with proven leadership and teamwork skills.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Dependable & Timely",
+    desc: "Known for meeting deadlines and maintaining exceptional standards.",
   },
 ];
 
@@ -99,7 +103,7 @@ const techStackImgs = [
     imgPath: "/images/logos/python.svg",
   },
   {
-    name: "Backend Developer",
+    name: "Graphic Designer",
     imgPath: "/images/logos/node.png",
   },
   {
@@ -107,7 +111,7 @@ const techStackImgs = [
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
+    name: "UI/UX Designer",
     imgPath: "/images/logos/git.svg",
   },
 ];
@@ -126,7 +130,7 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
+    name: "Graphic Designer",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
@@ -138,48 +142,48 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
-    scale: 0.05,
-    rotation: [0, -Math.PI / 4, 0],
+    name: "UI/UX Designer",
+    modelPath: "/models/android_logo.glb",
+    scale: 1.2,
+    rotation: [0, -Math.PI / 2, 0],
   },
 ];
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    review: "Adnan demonstrates exceptional leadership and design acumen. His creativity and mentoring abilities have been key to our club's project success.",
+    imgPath: "/images/mvj.jpg",
+    logoPath: "/images/IPD.jpg",
+    title: "Design Lead - IPD Club, MVJCE",
+    date: "January 2025 - Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Lead UI/UX design for club projects and mentor junior designers.",
+      "Collaborated with cross-functional teams on product development.",
+      "Organized workshops on design tools and methodologies.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    review: "Adnan’s UI/UX design work consistently impressed. His ability to translate ideas into elegant interfaces has elevated our project quality",
+    imgPath: "/images/mvj.jpg",
+    logoPath: "/images/ux.png",
+    title: "UI/UX Designer & Full Stack Developer",
+    date: "June 2024 - Present",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Designed intuitive web interfaces using Canva and Adobe XD.",
+      "Developed responsive UIs using React and Tailwind CSS.",
+      "Worked with REST APIs and optimized frontend performance.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    review: "Adnan shows a deep understanding of software engineering fundamentals and cloud technologies. His work ethic and curiosity stand out.",
+    imgPath: "/images/mvj.jpg",
+    logoPath: "/images/cse.png",
+    title: "Software Engineering Student - MVJCE",
+    date: "March 2022 - Present",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Studying corely Java, DSA, cloud computing, and machine learning.",
+      "Built cloud + ML integrated projects as part of coursework.",
+      "Contributed to backend using Spring Boot and Hibernate.",
     ],
   },
 ];
@@ -248,20 +252,26 @@ const socialImgs = [
   {
     name: "insta",
     imgPath: "/images/insta.png",
+    url: "https://instagram.com/_.adnanshaik._", // ⬅️ put your real profile URL here
   },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
+{
+  name: "github",
+  imgPath: "/images/github_logo.png", // make sure this image exists in /images/
+  url: "https://github.com/PsycAdnan", // 🔁 put your GitHub link here
+},
+
   {
     name: "x",
     imgPath: "/images/x.png",
+    url: "https://twitter.com/yourusername",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/adnan-shaikh16",
   },
 ];
+
 
 export {
   words,
